@@ -35,6 +35,7 @@ type Activity = {
 - Each lesson has one concise can-do outcome and normally at most 6–8 words, 1–2 patterns, and one small grammar concept.
 - Spanish includes accents and inverted `¿`/`¡`; audio is identified as `es-ES` and slow/normal wording matches.
 - Distractors are plausible but not tricks. Feedback explains meaning/use.
+- Prompts, visible text, and playable audio must not reveal the exact answer. In production activities, keep the target Spanish in the choices until feedback is shown.
 - Every assessment traces to introduced material.
 - Dialogues define goal, completion condition, recovery paths, and hints.
 - Regional alternatives are optional enrichment, not primary beginner content.
