@@ -25,8 +25,27 @@ window.SPANISH_OS_SCENARIOS = [
       ]}
     ]
   },
-  {id:"cafe-restaurant",number:"02",title:"咖啡館與餐廳",spanishTitle:"Café y restaurante",canDo:"看懂基本菜單並獨立完成點餐與結帳。",description:"菜單、點餐、需求與付款。",status:"planned",stamp:"CAFÉ",lessons:[
-    {id:"menu-basics",stage:"重點語言",title:"看懂菜單",subtitle:"飲料、餐點與常見分類"},{id:"ordering",stage:"理解",title:"開口點餐",subtitle:"聽懂店員並說出選擇"},{id:"requests",stage:"表達",title:"提出需求",subtitle:"數量、偏好與禮貌請求"},{id:"paying",stage:"實境任務",title:"結帳離開",subtitle:"詢問帳單並完成付款"}
+  {id:"cafe-restaurant",number:"02",title:"咖啡館與餐廳",spanishTitle:"Café y restaurante",canDo:"看懂基本菜單並獨立完成點餐與結帳。",description:"菜單、點餐、需求與付款。",status:"available",stamp:"CAFÉ",lessons:[
+    {id:"menu-basics",stage:"重點語言",title:"看懂菜單",subtitle:"飲料、餐點與常見分類",preview:"Un café con leche",translation:"一杯牛奶咖啡",questions:[
+      {prompt:"在西班牙咖啡館中，這杯飲料是？",phrase:"Un café con leche",answer:"一杯牛奶咖啡",options:["一杯黑咖啡","一杯牛奶咖啡","一杯熱巧克力"]},
+      {prompt:"「Agua sin gas」是什麼？",phrase:"Agua sin gas",answer:"無氣泡水",options:["無氣泡水","氣泡水","冰水"]},
+      {prompt:"菜單上的「postres」是哪一類？",phrase:"Postres",answer:"甜點",options:["主餐","飲料","甜點"]}
+    ]},
+    {id:"ordering",stage:"理解",title:"開口點餐",subtitle:"聽懂店員並說出選擇",preview:"¿Qué va a tomar?",translation:"您要喝什麼？",questions:[
+      {prompt:"店員問「¿Qué va a tomar?」，意思是？",phrase:"¿Qué va a tomar?",answer:"您要喝什麼？",options:["您要喝什麼？","您要結帳嗎？","您有訂位嗎？"]},
+      {prompt:"你想禮貌地點一杯咖啡，選哪一句？",phrase:"Quisiera un café, por favor",answer:"Quisiera un café, por favor",options:["Quisiera un café, por favor","¿Dónde está el café?","El café está cerrado"]},
+      {prompt:"店員問「¿Algo más?」，是在問？",phrase:"¿Algo más?",answer:"還需要別的嗎？",options:["味道如何？","還需要別的嗎？","要內用嗎？"]}
+    ]},
+    {id:"requests",stage:"表達",title:"提出需求",subtitle:"數量、偏好與禮貌請求",preview:"Sin azúcar, por favor",translation:"請不要加糖",questions:[
+      {prompt:"「Sin azúcar, por favor」表示？",phrase:"Sin azúcar, por favor",answer:"請不要加糖",options:["請多加糖","請不要加糖","請給我鹽"]},
+      {prompt:"你想請店員拿一杯水，選哪一句？",phrase:"¿Me trae un vaso de agua?",answer:"¿Me trae un vaso de agua?",options:["¿Me trae un vaso de agua?","¿Cuánto cuesta el agua?","El agua está fría"]},
+      {prompt:"你想說「我是素食者」，選哪一句？",phrase:"Soy vegetariano",answer:"Soy vegetariano",options:["Tengo mucha hambre","Soy vegetariano","Quiero carne"]}
+    ]},
+    {id:"paying",stage:"實境任務",title:"結帳離開",subtitle:"詢問帳單並完成付款",preview:"La cuenta, por favor",translation:"請給我帳單",questions:[
+      {prompt:"吃完後想請店員拿帳單，選哪一句？",phrase:"La cuenta, por favor",answer:"La cuenta, por favor",options:["La carta, por favor","La cuenta, por favor","Una mesa, por favor"]},
+      {prompt:"店員說「Son doce euros」，金額是？",phrase:"Son doce euros",answer:"十二歐元",options:["二歐元","十歐元","十二歐元"]},
+      {prompt:"你想詢問能不能刷卡，選哪一句？",phrase:"¿Puedo pagar con tarjeta?",answer:"¿Puedo pagar con tarjeta?",options:["¿Puedo pagar con tarjeta?","¿Dónde está mi tarjeta?","Quiero otra cuenta"]}
+    ]}
   ]},
   {id:"transport-directions",number:"03",title:"交通與問路",spanishTitle:"Transporte y direcciones",canDo:"購票、確認班次並找到正確目的地。",description:"地點、車票、班次與方向。",status:"planned",stamp:"RUTA",lessons:[
     {id:"places",stage:"重點語言",title:"認識地點",subtitle:"車站、街道與城市設施"},{id:"tickets",stage:"理解",title:"購買車票",subtitle:"目的地、單程與來回"},{id:"schedules",stage:"表達",title:"確認班次",subtitle:"時間、月台與轉乘"},{id:"finding-way",stage:"實境任務",title:"找到目的地",subtitle:"問路並理解基本方向"}

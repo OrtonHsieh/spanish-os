@@ -28,7 +28,7 @@ npm run build
 
 For the GitHub Pages version, opening `index.html` through any local static server is sufficient. Changes pushed to `main` are the source for the public site.
 
-The current prototype includes a ten-scenario roadmap with forty planned micro-lessons. The first scenario is fully playable with four sequential five-minute lessons, `es-ES` browser pronunciation, XP/combo feedback, a capability stamp, responsive styling, profile naming, and versioned device-local progress/reset controls.
+The current prototype includes a ten-scenario roadmap with forty planned micro-lessons. The first two scenarios—meeting someone and café/restaurant—are fully playable with four sequential five-minute lessons each, `es-ES` browser pronunciation, XP/combo feedback, capability stamps, responsive styling, profile naming, and versioned per-scenario device-local progress/reset controls.
 
 ## Implementation notes
 
