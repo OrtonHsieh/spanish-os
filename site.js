@@ -30,7 +30,8 @@ function load(){
     const profile=JSON.parse(localStorage.getItem("spanish-os-profile")||"{}");
     const saved=JSON.parse(localStorage.getItem("spanish-os-progress")||"{}");
     const completed=Array.isArray(saved.completedLessons)?saved.completedLessons.filter(id=>lessons.some(l=>l.id===id)):[];
-    const current=Math.min(Number.isInteger(saved.currentLesson)?saved.currentLesson:completed.length,lessons.length-1);
+    const savedLesson=Number.isInteger(saved.currentLesson)?saved.currentLesson:0;
+    const current=Math.min(Math.max(savedLesson,completed.length),lessons.length-1);
     state={...state,name:profile.name||"",xp:Number(saved.xp)||0,completed,lesson:current};
   }catch(_){ /* Ignore malformed device-local data. */ }
 }
