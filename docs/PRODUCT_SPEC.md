@@ -31,10 +31,13 @@ One scenario takes about 20 minutes and contains four approximately five-minute 
 1. **Meeting someone:** greet, state name/origin/languages, and ask the other person.
 2. **Café and restaurant:** read essentials, order, express needs, and pay.
 3. **Transport and directions:** buy a ticket, confirm service, ask where something is, and understand basic directions.
-4. Shopping and markets.
-5. Accommodation.
-6. Social plans and invitations.
-7. Health and emergencies.
+4. **Shopping and markets:** identify products, ask prices, choose size/quantity, and pay.
+5. **Accommodation:** confirm a booking, check in, request amenities, and report a problem.
+6. **Time and plans:** tell time/date, check opening hours, and arrange a day.
+7. **Social plans and invitations:** discuss interests, invite, respond, and agree on details.
+8. **Daily shopping:** identify groceries, understand packaging, find products, and check out.
+9. **Health and emergencies:** describe symptoms, use a pharmacy, and ask for urgent help.
+10. **A day in Spain:** integrate transport, food, social plans, and problem-solving in one journey.
 
 The first scenario ends with a language-exchange conversation in Madrid. Its lessons cover greetings; names and `Encantado/a`; origin, residence, and languages; then the complete conversation.
 

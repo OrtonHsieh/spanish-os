@@ -21,3 +21,7 @@ The first lesson works without an account and device-local progress is used init
 ## 2026-08-27 — Accepted: GitHub Pages as primary hosting
 
 The public site uses the repository root `index.html` as its canonical entry so the owner can control source and deployment directly from GitHub. The earlier managed-hosting URL may remain available but is no longer the primary release target.
+
+## 2026-08-27 — Accepted: ten-scenario practical roadmap
+
+The beginner route contains ten practical scenarios and forty planned five-minute lessons. Only pedagogically complete scenarios are playable; planned scenarios remain previewable so learners can understand the roadmap and urgent real-life value before release.
