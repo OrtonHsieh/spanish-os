@@ -25,3 +25,7 @@ The public site uses the repository root `index.html` as its canonical entry so 
 ## 2026-08-27 — Accepted: ten-scenario practical roadmap
 
 The beginner route contains ten practical scenarios and forty planned five-minute lessons. Only pedagogically complete scenarios are playable; planned scenarios remain previewable so learners can understand the roadmap and urgent real-life value before release.
+
+## 2026-08-27 — Accepted: curated multilingual country knowledge
+
+“Discover Spain” is a top-level area alongside Home and the Scenario Map. Country articles are curated in Traditional Chinese, English, and Spanish with instant switching and side-by-side comparison. The product does not provide unrestricted machine translation, and political coverage focuses on stable institutions rather than changing partisan news.

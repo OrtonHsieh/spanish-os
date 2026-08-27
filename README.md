@@ -28,7 +28,7 @@ npm run build
 
 For the GitHub Pages version, opening `index.html` through any local static server is sufficient. Changes pushed to `main` are the source for the public site.
 
-The current prototype includes a ten-scenario roadmap with forty planned micro-lessons. The first seven practical scenarios are fully playable with four sequential five-minute lessons each, `es-ES` browser pronunciation, XP/combo feedback, capability stamps, responsive styling, profile naming, and versioned per-scenario device-local progress/reset controls.
+The current prototype includes a ten-scenario roadmap with forty planned micro-lessons. The first seven practical scenarios are fully playable with four sequential five-minute lessons each. A separate “Discover Spain” area provides nine curated topics with instant Traditional Chinese, English, Spanish, and side-by-side comparison views. The site also includes `es-ES` browser pronunciation, XP/combo feedback, capability stamps, responsive styling, profile naming, and versioned per-scenario device-local progress/reset controls.
 
 ## Implementation notes
 

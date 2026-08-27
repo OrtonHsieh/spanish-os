@@ -4,8 +4,9 @@ import test from "node:test";
 import vm from "node:vm";
 
 const rootUrl=new URL("../",import.meta.url);
-const [contentSource,siteSource]=await Promise.all([
+const [contentSource,countrySource,siteSource]=await Promise.all([
   readFile(new URL("content.js",rootUrl),"utf8"),
+  readFile(new URL("spain-content.js",rootUrl),"utf8"),
   readFile(new URL("site.js",rootUrl),"utf8"),
 ]);
 
@@ -22,6 +23,7 @@ function boot(progress){
   context.window=context;
   vm.createContext(context);
   vm.runInContext(contentSource,context);
+  vm.runInContext(countrySource,context);
   vm.runInContext(siteSource,context);
   return {context,root,memory};
 }
@@ -58,4 +60,12 @@ test("unlocks the seven released scenarios in sequence at three of four lessons"
   const unlocked=vm.runInContext("(()=>{state.completedByScenario=Object.fromEntries(scenarios.slice(0,6).map(s=>[s.id,s.lessons.slice(0,3).map(l=>l.id)]));return scenarios.slice(1,7).every((_,i)=>scenarioUnlocked(i+1))})()",context);
   assert.equal(unlocked,true);
   assert.equal(vm.runInContext("scenarioUnlocked(7)",context),false);
+});
+
+test("country knowledge has nine complete topics in three aligned languages",()=>{
+  const {context}=boot();
+  const result=vm.runInContext("({count:countryTopics.length,complete:countryTopics.every(t=>['title','summary','body'].every(field=>['zh','en','es'].every(lang=>Boolean(t[field][lang])))&&t.source.startsWith('https://'))})",context);
+  assert.equal(result.count,9);
+  assert.equal(result.complete,true);
+  assert.match(vm.runInContext("state.screen='spain';render();document.querySelector('#spanish-os').innerHTML",context),/認識西班牙/);
 });

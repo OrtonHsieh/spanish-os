@@ -2,8 +2,9 @@
 
 ## Foundation
 
-- The canonical public deployment is a dependency-free GitHub Pages site: `index.html` + `content.js` + `site.js` + `app/globals.css`.
+- The canonical public deployment is a dependency-free GitHub Pages site: `index.html` + `content.js` + `spain-content.js` + `site.js` + `app/globals.css`.
 - `content.js` owns scenario and lesson records; `site.js` renders them and must not embed catalog content as UI markup.
+- `spain-content.js` owns curated country-knowledge records and their aligned `zh`/`en`/`es` translations. Language switching is a presentation preference and remains independent from learning progress.
 - The vinext + React prototype under `app/` remains available during migration, but public behavior must be implemented in the canonical static entry first.
 - Browser `localStorage` holds prototype guest progress.
 - Browser `SpeechSynthesis` with `es-ES` is the pronunciation fallback.

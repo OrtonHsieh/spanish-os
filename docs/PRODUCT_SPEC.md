@@ -66,3 +66,7 @@ Today page, practical scenario route, scenario detail, four micro-lessons, exerc
 Explicitly outside MVP: leaderboards, friends/guilds, stores, unrestricted AI chat, pronunciation scoring, and full authoring CMS.
 
 Measure learning through scenario completion, delayed recall, falling hint usage, successful real-life tasks, and return after missed days—not vanity engagement alone.
+
+## Country knowledge
+
+The top-level “Discover Spain” area complements language scenarios with history, culture, political institutions, geography and autonomous communities, language diversity, gastronomy, art and architecture, festivals, and everyday etiquette. Every article is authored in Traditional Chinese, English, and Spanish, with instant single-language switching and a three-language comparison view. It is curated reference content, not unrestricted machine translation; time-sensitive political news is outside scope.
