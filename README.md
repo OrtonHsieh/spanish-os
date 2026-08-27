@@ -28,7 +28,7 @@ npm run build
 
 For the GitHub Pages version, opening `index.html` through any local static server is sufficient. Changes pushed to `main` are the source for the public site.
 
-The current prototype includes a scenario route, one five-question micro-lesson, `es-ES` browser pronunciation, XP/combo feedback, a capability stamp, responsive styling, and device-local progress.
+The current prototype includes one complete scenario made of four sequential five-minute lessons, `es-ES` browser pronunciation, XP/combo feedback, a capability stamp, responsive styling, profile naming, and device-local progress/reset controls.
 
 ## Implementation notes
 
