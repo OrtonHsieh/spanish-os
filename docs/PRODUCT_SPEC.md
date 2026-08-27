@@ -43,6 +43,8 @@ The first scenario ends with a language-exchange conversation in Madrid. Its les
 
 The second scenario ends with a complete café visit: reading essentials, ordering politely, expressing dietary or serving needs, requesting the bill, and asking to pay by card.
 
+Scenarios three through seven are playable and cover transport/directions, shopping/markets, accommodation, time/plans, and social invitations. Each follows the same four-stage progression from key language to an integrated practical task.
+
 ## Exercises and answers
 
 MVP types: multiple choice, matching, sentence ordering, short text input, and constrained dialogue. Later: listening-only work and constrained role-play. Speech recognition and pronunciation scoring are not MVP.

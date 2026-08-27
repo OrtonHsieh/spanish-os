@@ -26,13 +26,17 @@ function boot(progress){
   return {context,root,memory};
 }
 
-test("catalog has ten four-lesson scenarios and two complete playable scenarios",()=>{
+test("catalog has ten four-lesson scenarios and seven complete playable scenarios",()=>{
   const {context}=boot();
   const summary=vm.runInContext("scenarios.map(s=>({status:s.status,lessons:s.lessons.length,ready:s.lessons.every(l=>Array.isArray(l.questions)&&l.questions.length===3)}))",context);
   assert.equal(summary.length,10);
   assert.ok(summary.every(s=>s.lessons===4));
-  assert.deepEqual(Array.from(summary.slice(0,2),s=>s.status),["available","available"]);
-  assert.ok(summary[0].ready&&summary[1].ready);
+  assert.deepEqual(Array.from(summary.slice(0,7),s=>s.status),Array(7).fill("available"));
+  assert.ok(summary.slice(0,7).every(s=>s.ready));
+  const integrity=vm.runInContext("(()=>{const ids=scenarios.flatMap(s=>[s.id,...s.lessons.map(l=>`${s.id}/${l.id}`)]);const activities=scenarios.slice(0,7).flatMap(s=>s.lessons.flatMap(l=>l.questions));return {unique:new Set(ids).size===ids.length,answers:activities.every(q=>q.options.includes(q.answer)),count:activities.length}})()",context);
+  assert.equal(integrity.unique,true);
+  assert.equal(integrity.answers,true);
+  assert.equal(integrity.count,84);
 });
 
 test("migrates legacy first-scenario progress and unlocks scenario two at 70 percent",()=>{
@@ -47,4 +51,11 @@ test("restores independent progress for the second scenario",()=>{
   assert.equal(vm.runInContext("state.scenario",context),1);
   assert.equal(vm.runInContext("completed().length",context),2);
   assert.equal(vm.runInContext("state.lesson",context),2);
+});
+
+test("unlocks the seven released scenarios in sequence at three of four lessons",()=>{
+  const {context}=boot();
+  const unlocked=vm.runInContext("(()=>{state.completedByScenario=Object.fromEntries(scenarios.slice(0,6).map(s=>[s.id,s.lessons.slice(0,3).map(l=>l.id)]));return scenarios.slice(1,7).every((_,i)=>scenarioUnlocked(i+1))})()",context);
+  assert.equal(unlocked,true);
+  assert.equal(vm.runInContext("scenarioUnlocked(7)",context),false);
 });
