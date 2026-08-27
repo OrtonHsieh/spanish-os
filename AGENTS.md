@@ -24,7 +24,7 @@ This is the primary contract for every AI and human contributor. Read it before 
 
 ## Engineering rules
 
-- Preserve vinext/React/TypeScript and the existing package manager/lockfile unless explicitly approved otherwise.
+- The canonical public runtime is the root `index.html` and `site.js`, deployed directly by GitHub Pages. Keep it dependency-free and functional without a build step. The vinext/React implementation is secondary during migration; do not ship features only there.
 - New lessons are data-driven and conform to `docs/CONTENT_MODEL.md`. Do not grow the catalog inside UI components.
 - Separate UI, learning-domain logic, persistence, audio, and content as the prototype expands.
 - Use `localStorage` only for versioned device-local guest progress/preferences. Guard parsing and migrations; never store secrets or sensitive personal data.

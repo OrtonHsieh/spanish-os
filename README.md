@@ -2,6 +2,8 @@
 
 Spanish OS is a practical, gameful Spanish-learning website for Traditional Chinese beginners. It teaches Spanish from Spain through five-minute lessons grouped into real-life scenarios.
 
+The public site is deployed with GitHub Pages. The canonical browser entry is `index.html`, with interaction logic in `site.js` and shared styling in `app/globals.css`.
+
 ## Contributor starting point
 
 Read these documents before making changes:
@@ -23,6 +25,8 @@ npm install
 npm run dev
 npm run build
 ```
+
+For the GitHub Pages version, opening `index.html` through any local static server is sufficient. Changes pushed to `main` are the source for the public site.
 
 The current prototype includes a scenario route, one five-question micro-lesson, `es-ES` browser pronunciation, XP/combo feedback, a capability stamp, responsive styling, and device-local progress.
 

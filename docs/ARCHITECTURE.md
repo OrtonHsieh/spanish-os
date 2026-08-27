@@ -2,10 +2,11 @@
 
 ## Foundation
 
-- vinext + React 19 + TypeScript; app source under `app/`.
+- The canonical public deployment is a dependency-free GitHub Pages site: `index.html` + `site.js` + `app/globals.css`.
+- The vinext + React prototype under `app/` remains available during migration, but public behavior must be implemented in the canonical static entry first.
 - Browser `localStorage` holds prototype guest progress.
 - Browser `SpeechSynthesis` with `es-ES` is the pronunciation fallback.
-- Preserve compatibility with static/public GitHub delivery; backend capabilities stay optional.
+- Preserve direct static GitHub Pages compatibility; backend capabilities stay optional.
 
 ## Target boundaries
 

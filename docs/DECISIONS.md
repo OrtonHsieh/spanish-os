@@ -17,3 +17,7 @@ Use XP, combos, unlocks, stamps, and supportive streaks. Do not use punitive liv
 ## 2026-08-27 — Accepted: guest-first MVP
 
 The first lesson works without an account and device-local progress is used initially. Add identity when cross-device persistence provides clear value.
+
+## 2026-08-27 — Accepted: GitHub Pages as primary hosting
+
+The public site uses the repository root `index.html` as its canonical entry so the owner can control source and deployment directly from GitHub. The earlier managed-hosting URL may remain available but is no longer the primary release target.
